@@ -1,0 +1,233 @@
+        /*Master*/
+        body {
+            
+        }
+        
+        .page {
+            width: 1000px;
+        }
+        .main {
+            padding-bottom: 30px;
+        }
+        .title img {
+            padding-left: 15% !important;
+        }
+         button, input, select, textarea {
+             min-height: 27px;
+         }
+         select {
+             color: #444;
+         }
+         button, html input[type=button], input[type=reset], input[type=submit] {
+            -webkit-appearance: button;
+            cursor: pointer;
+            
+        }
+        table {
+            width: 100%;
+        }
+        .dropdown-toggle-li .dropdown-menu.sub {
+            transition: all 0.3s;
+        }
+        input[type=text], textarea, input[type=textarea], select {
+            -ms-border-radius: 5px;
+            border-radius: 5px;
+            border: 1px solid #c1c1c1;
+            padding-left: 5px;
+            width: 95%;
+            max-width: 200px;
+        }
+        .needBlock input[type=text], .needBlock textarea, .needBlock input[type=textarea], .needBlock select {
+            display: block;
+        }
+        .dialogzone input[type=text], .dialogzone textarea, .dialogzone input[type=textarea], .dialogzone select {
+            
+        }
+        
+        .dialogzone table td, .dialogzone  table th{
+            width: auto;
+        }
+        input[type="submit"]:not(.btn) {
+            padding: 3.5px 12px;
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+            border: 1px solid transparent;
+            -ms-border-radius: 4px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        td:last-of-type input[type="submit"]:not(.btn) {
+            padding: 3.5px 12px;
+            color: #fff;
+            background-color: #3a4f63;
+            border-color: #2b82ce;
+            border: 1px solid transparent;
+            -ms-border-radius: 4px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        td:nth-of-type(6) input[type="submit"]:not(.btn) {
+            padding: 3.5px 12px;
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+            border: 1px solid transparent;
+            -ms-border-radius: 4px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        #MainContent_GridView1 td {
+            padding: 5px 0;
+        }
+        table td a {
+            border: 1px solid #ededed;
+            padding: 5px;
+        }
+
+        /*Applicant Student*/
+        .entryFormTable {
+            
+        }
+        .entryFormTable.table>tbody>tr>td, .entryFormTable.table>tbody>tr>th, .entryFormTable.table>tfoot>tr>td, .entryFormTable.table>tfoot>tr>th, .entryFormTable.table>thead>tr>td, .entryFormTable.table>thead>tr>th {
+            border: none;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        
+        .entryFormTable b {
+            display: block;
+        }
+        .hasBootstrap button, .hasBootstrap input, .hasBootstrap select, .hasBootstrap textarea{
+            height: auto;
+        }
+        
+        .applicantStudent.entryFormTable.table>tbody>tr>td{
+            width: 33.32%;
+            padding-bottom: 15px;
+        }
+        .applicantStudent.entryFormTable.table>tbody>tr>td .btn{
+            margin-top: 18px;
+            min-width: 100px;
+        }
+        .applicantStudent.entryFormTable.table>tbody>tr>td span{
+            position: absolute;
+        }
+        
+        /*ShowAllStudent*/
+        #MainContent_allApplicantGridView tr:first-of-type, #MainContent_admissionSelectionGridView tr:first-of-type  {
+            background: #3a4f63 !important;
+        }
+        #MainContent_allApplicantGridView th, #MainContent_allApplicantGridView td,
+        #MainContent_admissionSelectionGridView th, #MainContent_admissionSelectionGridView td  {
+            text-align: center;
+            border-color: #c1c1c1;
+            padding: 0 2px; 
+        }
+        #MainContent_admissionRadioButtonList input[type=radio]{
+            position: absolute;
+        }
+        #MainContent_admissionRadioButtonList label{
+            margin: 7px 0 0 20px;
+            cursor: pointer;
+        }
+        .ShowAllStudent td select {
+            max-width: 200px;
+        }
+        .ShowAllStudent .btn {
+            min-width: 100px;
+        }
+        .ShowAllStudent td, .ShowAllStudent th  {
+            width: 20%;
+        }
+        
+        
+        /*StudentAddmission*/
+        .StudentAddmission .idCheckBox label
+        {
+            max-width: 80% !important;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+        .StudentAddmission .gender input[type=radio]
+        {
+            position: absolute;
+        }
+        .StudentAddmission .gender label
+        {
+            margin: 7px 0 0 20px;
+            cursor: pointer;
+        }
+        .StudentAddmission td
+        {
+            padding-bottom: 25px;
+        }
+        
+        .StudentAddmission td span, .StudentAddmission td p
+        {
+            position: absolute;
+        }
+        .StudentAddmission td.gender span
+        {
+            position: relative;
+        }
+        .StudentAddmission .btn
+        {
+            padding: 3.5px 12px;
+        }
+        .StudentAddmission input[type=text], .StudentAddmission textarea, .StudentAddmission input[type=textarea], .StudentAddmission select {
+            -ms-border-radius: 5px;
+            border-radius: 5px;
+            border: 1px solid #c1c1c1;
+            padding-left: 5px;
+        }
+        .StudentAddmission input[type="file"] {
+            cursor: pointer !important;
+        }
+        .StudentAddmission table {
+            width: 100%;
+        }
+        div.StudentAddmission table .btn{
+            margin-right: 22px;
+        }
+        
+        /*ApplicantListReport*/
+        .ApplicantListReport .btn{
+            margin-top: 13px;
+        }
+        .ApplicantListReport .needBlock {
+            margin-bottom: 10px;
+        }
+        /*InterviewListReport*/
+        .InterviewListReport table td span{
+            position: absolute;
+        }
+        .InterviewListReport table td .btn{
+            margin-top: 18px;
+        }
+        .InterviewListReport td, .ShowAllStudent th  {
+            width: 18%;
+        }
+        /*InterviewResult*/
+        .reportPage table td span{
+            position: absolute;
+        }
+        .reportPage table td .btn{
+            margin-top: 18px;
+        }
+        .reportPage td, .reportPage th  {
+            width: 25%;
+        }
+        
+        
+        #MainContent_pnlGridView table {
+            font-size: 12px;
+        }
+        #MainContent_pnlGridView table td{
+            border-color: #c1c1c1;
+            padding-left: 3px;
+            color: #333;
+        }
+        
+        

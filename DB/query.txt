@@ -1,0 +1,32 @@
+SELECT VarStudentID FROM STUDENT WHERE VarSessionName='S1617' AND PClassID=120
+SELECT VarStudentID FROM tbl_ReAdmissionHistory WHERE PreSession='S1617' AND PreClass=120
+SELECT VarStudentID FROM tbl_TransferHistory WHERE PreSession='S1617' AND PreClass=120
+
+select s.VarSubjectName,es.UnitCode,eu.islab from tbl_EdexcelSubjectAssign AS es 
+join tbl_Subject as s on es.SubjectId=s.VarSubjectCode 
+join tbl_EdexelunitCode as eu on es.UnitCodeNo=eu.UnitCodeSpeCode and es.SubjectId=eu.SpecificationCode 
+where Session='S1617' and es.ClassId=126 and StudentId='MU0001432' and s.ClassId=126 and eu.Class=126
+order by es.StudentId,s.SubSerial,es.UnitCode
+select * from tbl_EdexelunitCode
+select * from tbl_Subject WHERE ClassId>125
+
+select * from tbl_EdexcelSubjectAssign where StudentId='MU0001432' and Session='S1617'
+
+select es.StudentId,s.VarSubjectName,es.UnitCode,eu.islab,es.Section from tbl_EdexcelSubjectAssign AS es 
+join tbl_Subject as s on es.SubjectId=s.VarSubjectCode 
+join tbl_EdexelunitCode as eu on es.UnitCodeNo=eu.UnitCodeSpeCode and es.SubjectId=eu.SpecificationCode 
+where Session='S1617' and es.ClassId=126 and s.ClassId=126 and eu.Class=126
+order by es.StudentId,s.SubSerial
+
+
+select * from temp_SectionPaper where studentid='MU0001375'
+
+//New Student Rpt
+select VarStudentID,VarStudentFirstName,VarStudentLastName,
+StudentRoll,VarStudenHomeCell,VarShiftCode,PClassID,RecommendAdmissionSection,StudentRoll,CampusId,Status
+from Student where VarSessionName='S1617' and PClassID='126' and VarBranchID='2' 
+union
+select VarStudentID,VarStudentFirstName,VarStudentLastName,
+StudentRoll,VarStudenHomeCell,VarShiftCode,PClassID,RecommendAdmissionSection,StudentRoll,CampusId,Status
+from Student_Old where VarSessionName='S1617' and PClassID='126' and VarBranchID='2' order by VarStudentID 
+
